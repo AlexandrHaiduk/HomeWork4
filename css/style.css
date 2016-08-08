@@ -68,56 +68,55 @@ body {
   <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!MENU!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->*/
 
 .menu {
-    width: 100%;
     position: relative;
     bottom: 76px;
+    width: 100%;
     margin-bottom: -85px;
-    background-image: url('../img/menubg.gif');
     clear: both;
-    color: white;
     border-top: solid 1px #fff;
+    background-image: url('../img/menubg.gif');
+    color: #fff;
 }
-
 
 ul {
     display: block;
     margin: 0;
     padding: 0;
+    color: #fff;
     list-style: none;
-    color: white;
 }
 
-ul:after {
+ul::after {
     display: block;
-    content: ' ';
-    clear: both;
     float: none;
+    clear: both;
+    content: ' ';
 }
 
 ul.menu > li {
-    float: left;
     position: relative;
+    float: left;
 }
 
-  ul.menu > li > a {
+ul.menu > li > a {
     display: block;
     padding: 10px;
-    background-image: url("../img/menubg.gif");
+    background-image: url('../img/menubg.gif');
+    color: #fff;
     text-decoration: none;
-    color: white;
 }
 
 .menu > li > a:hover {
-    background-color: black;
+    background-color: #000;
 }
 
 ul.submenu {
     display: none;
     position: absolute;
-    width: 120px;
     left: 0;
-    background-color: white;
-    border: 1px solid black;
+    width: 120px;
+    border: 1px solid #000;
+    background-color: #fff;
   }
 
 ul.submenu > li {
@@ -127,9 +126,9 @@ ul.submenu > li {
 .submenu > li > a {
     display: block;
     padding: 10px;
-    color: white;
-    text-decoration: none;
     background-image: url('../img/menubg.gif');
+    color: #fff;
+    text-decoration: none;
 }
 
 .submenu > li > a:hover {
@@ -141,17 +140,17 @@ ul.menu > li:hover > ul.submenu {
 }
 
 .menu li {
-    font-family: sans-serif;
     width: 14%;
+    color: #fff;
+    font-family: sans-serif;
     font-size: 12px;
     text-align: center;
-    color: white;
 }
 
 .submenu li {
     width: auto;
+    color: #fff;
     z-index: 1;
-    color: white;
 }
 
   /*<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!MENU!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
@@ -230,14 +229,11 @@ footer {
     text-align: center;
 }
 
-.news_section {
-border-bottom: 1px solid #c7cacf
-}
 
 hr {
-  margin-right: -20px;
-  margin-left: -10px;
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 0;
+    margin-top: 0;
+    margin-right: -20px;
+    margin-bottom: 0;
+    margin-left: -10px;
+    padding: 0;
 }
